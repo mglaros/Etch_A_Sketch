@@ -1,0 +1,39 @@
+h1{
+	font-family: arial;
+	text-align: center;
+	font-size: 200%;
+}
+
+button{
+	background-color: yellow;
+	height: 50px;
+	width: 200px;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+#wrapper{
+	border: 1px solid black;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	
+	
+}
+
+.highlight{
+	background-color: #000000;
+}
+
+.cell{
+	display: inline-block;
+
+	border: 1px solid black;
+	
+}
+
+#buttons{
+	margin-left: 450px;
+	margin-bottom: 10px;
+}
