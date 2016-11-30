@@ -1,7 +1,7 @@
 h1{
 	font-family: arial;
 	text-align: center;
-	font-size: 200%;
+	font-size: 50px;
 }
 
 button{
@@ -27,7 +27,7 @@ button{
 }
 
 .cell{
-	display: inline-block;
+	float: left;
 
 	border: 1px solid black;
 	
