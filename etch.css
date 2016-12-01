@@ -1,29 +1,44 @@
+
+*{
+	box-sizing: border-box;
+}
+
+
+
 h1{
-	font-family: arial;
+	font-family: 'Cabin Sketch', cursive;
 	text-align: center;
 	font-size: 50px;
+}
+
+.styled-select{
+	background-color: yellow;
+	height: 50px;
+	width: 150px;
+	font-weight: bold;
+	font-size: 100%;
+	border-radius: 5px;
+	border: 2px solid red;
 }
 
 button{
 	background-color: yellow;
 	height: 50px;
-	width: 200px;
+	width: 175px;
 	font-weight: bold;
-	font-size: 150%;
+	font-size: 100%;
+	border-radius: 5px;
+	border: 2px solid red;
 }
 
-#wrapper{
-	border: 1px solid black;
-	width: 960px;
+.wrapper{
+	
+	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
 	
 	
-}
-
-.highlight{
-	background-color: #000000;
 }
 
 .cell{
@@ -34,6 +49,6 @@ button{
 }
 
 #buttons{
-	margin-left: 450px;
-	margin-bottom: 10px;
+	margin-left: 375px;
+	margin-bottom: 20px;
 }

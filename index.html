@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="etch.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="etch.js"></script> 
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+	<link rel="stylesheet" href="etch.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="etch.js"></script> 
 
 
 </head>
@@ -12,8 +13,18 @@
 <body>
 	<h1>Welcome to Etch A Sketch!</h1>
 	<div id="buttons">
+		<select class="styled-select">
+			<option value="choose">Choose Color</option>
+			<option value="black">Black</option>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="rainbow">Rainbow</option>
+		</select>
+	
+	
 		<button id="size">Resize</button>
 		<button id="clear">Clear Grid</button>
+
 	</div>
 
 	

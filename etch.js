@@ -19,15 +19,55 @@ $(document).ready(function(){
 		$(".cell").width(squareWidth);
 		$(".cell").height(squareWidth);
 
-		$(".cell").mouseenter(function(){
-			$(this).addClass("highlight");
-		});
+		//$(".cell").mouseenter(function(){
+			//$(this).addClass("highlight");
+		//});
 
 
 
 	}//function makeGrid
 
 		makeGrid();
+
+		$(".styled-select").change(function(){
+			var color = $(this).val();
+			switch(color){
+
+				case 'black': 
+
+					$('.cell').mouseenter(function(){
+						$(this).css("background-color", 'black');
+
+				});
+					break;
+
+				case 'red':
+					$('.cell').mouseenter(function(){
+						$(this).css("background-color", 'red');
+					});
+					break;
+
+				case 'blue':
+					$('.cell').mouseenter(function(){
+						$(this).css("background-color", 'blue');
+					});
+					break;
+				case 'rainbow':
+					$('.cell').mouseenter(function(){
+							var multiplecolor = 'rgb(' + (Math.floor(Math.random()*256)) + ',' + (Math.floor(Math.random()*256)) + ',' + (Math.floor(Math.random()*256)) + ')';
+							$(this).css("background-color", multiplecolor);
+
+					});
+					break;
+
+
+
+
+			}
+
+
+
+		});
 
 
 
@@ -40,7 +80,7 @@ $(document).ready(function(){
 		});
 
 		$("#clear").click(function(){
-			$(".cell").removeClass("highlight");
+			$(".cell").css("background-color", 'white');
 
 		})
 		
